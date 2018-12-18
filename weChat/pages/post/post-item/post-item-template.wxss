@@ -1,0 +1,22 @@
+/* pages/post/post-item/post-item-template.wxss */
+.top-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 20rpx 20rpx 40rpx;
+  padding: 5px 0 5px;
+  background: #fff;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed;
+}
+
+.title {
+  padding-left: 20rpx;
+  font-size: 34rpx;
+  color: #333;
+}
+
+.description {
+  padding: 0 10px;
+  font-size: 26rpx;
+}

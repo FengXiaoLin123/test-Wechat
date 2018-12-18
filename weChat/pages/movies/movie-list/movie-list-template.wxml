@@ -1,0 +1,22 @@
+<!--pages/movies/movi-list/movie-list-template.wxml-->
+<import src="../movie/movie-template.wxml" />
+
+<template name="movieListTemplate">
+  <view class='movie-item-plate'>
+    <view class='template-title'>
+      <text class='remen'>热门放映</text>
+      <view class='title-right'>
+        <text>更多</text>
+        <image src='/images/rightblue.png' class='righrBlue'/>
+      </view>
+    </view>
+    <view class='mobie-list-content'>
+      <view class='movie-list-items'>
+        <block wx:for="{{movies}}" wx:for-item="movie" wx:key="id">
+          <template is="movieTemplate" data="{{...movie}}"/>
+          <!-- <template is="movieTemplate" data="{{movie}}"/> -->
+        </block>
+      </view>
+    </view>
+  </view>
+</template>

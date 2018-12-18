@@ -1,0 +1,24 @@
+/* pages/movies/movie/movie-template.wxss */
+@import "../stars/stars-template.wxss";
+
+.movie-item {
+  width: 240rpx;
+  padding: 0 5rpx;
+  display: inline-block;
+}
+
+.movie-img {
+  width: 220rpx;
+  height: 290rpx;
+}
+
+.movie-title {
+  width: 220rpx;
+  font-size: 15px;
+  padding-bottom: 10rpx;
+  color: #999;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  overflow: hidden;
+}

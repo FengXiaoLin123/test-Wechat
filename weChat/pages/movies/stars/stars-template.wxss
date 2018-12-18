@@ -1,0 +1,22 @@
+/* pages/movies/stars/stars.wxss */
+.startContent {
+  display: flex;
+  align-items: centre;
+  justify-content: flex-start;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  /* height: 17rpx; */
+}
+
+.star-img {
+  padding-left: 3rpx;
+  width: 17rpx;
+  height: 17rpx;
+  margin-top: 6rpx;
+}
+
+.grade {
+  margin-left: 24rpx;
+  color: #1f3463;
+  font-size: 12px;
+}

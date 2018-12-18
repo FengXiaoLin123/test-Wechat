@@ -1,0 +1,14 @@
+/* pages/movies/movies.wxss */
+@import "movie-list/movie-list-template.wxss";
+
+.movie-list-page {
+  background: #F5F5F5;
+}
+
+.top-search {
+  padding: 20rpx 20rpx 5rpx 20rpx;
+}
+.input-search {
+  color: rgba(0, 0, 0, .5);
+  font-size: 24rpx;
+}

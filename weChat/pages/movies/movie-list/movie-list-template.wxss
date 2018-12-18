@@ -1,0 +1,48 @@
+/* pages/movies/movi-list/movie-list-template.wxss */
+@import "../movie/movie-template.wxss";
+.movie-item-plate {
+  background: #fff;
+  margin-bottom: 30rpx;
+}
+
+.template-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15rpx 25rpx;
+}
+
+.remen {
+  font-size: 24rpx;
+  color: #333;
+  
+}
+
+.title-right text {
+  font-size: 20rpx;
+  color: #666;
+}
+
+.title-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.righrBlue {
+  width: 18rpx;
+  height: 18rpx;
+  margin-left: 10rpx;
+}
+
+.mobie-list-content {
+  width: 100%;
+  padding: 0 15rpx;
+}
+
+.movie-list-items {
+  /* display: flex;
+  overflow: hidden; */
+  /* align-items: center;
+  justify-content: space-between; */
+}

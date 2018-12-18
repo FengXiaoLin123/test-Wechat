@@ -1,0 +1,8 @@
+<!--pages/post/post-item/post-item-template.wxml-->
+<template name="postItem">
+  <view class='top-title'>
+    <image src="{{item.icon}}" class='info' />
+    <text class='title'>{{item.title}}</text>
+  </view>
+  <view class='description'>{{item.description}}</view>
+</template>

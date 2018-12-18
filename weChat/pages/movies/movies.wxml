@@ -1,0 +1,12 @@
+<!--pages/movies/movies.wxml-->
+<import src="movie-list/movie-list-template.wxml" />
+<view class='movie-list-page'>
+  <view class='top-search'>
+    <input placeholder-class="input-search" confirm-type="search" placeholder="请输入关键字搜索"></input>
+  </view>
+  <block wx:for="{{readyData}}" wx:for-item="movies">
+    <template is="movieListTemplate" data="{{movies}}"/>
+  </block>
+  <!-- <template is="movieListTemplate" />
+  <template is="movieListTemplate" /> -->
+</view>

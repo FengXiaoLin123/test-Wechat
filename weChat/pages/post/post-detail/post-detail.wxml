@@ -1,0 +1,21 @@
+<!--pages/post/post-detail/post-detail.wxml-->
+<view>
+  <view class='top-img'>
+    <image src="{{detailData.img}}" class="detail-image" />
+    <image src="/images/start.jpeg" class='paly' />
+    <!-- <image src="/images/suspend.jpeg" class='paly' /> -->
+  </view>
+  <view>
+    <text class="detail-title">{{detailData.title}}</text>
+    <view class='center-box'>
+      <view class='line'></view>
+      <view class='inner-box'>
+        <image wx:if="{{starShow}}" catchtap="changeStarShow" src='/images/star.png' class='star-active' />
+        <image wx:else catchtap="changeStarShow" src="/images/hstar.png" class='star' />
+        <image src='/images/share.png' catchtap="onShareTap" class='share' />
+      </view>
+    </view>
+    <view class='detail-dec'>{{detailData.detail}}</view>
+  </view>
+
+</view>
