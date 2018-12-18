@@ -14,6 +14,20 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const covertToStarsArray = stars => {
+  let num = stars.toString().substring(0,1);
+  let arr = [];
+  for(let i = 1; i <= 5; i++) {
+    if(i <= num) {
+      arr.push(1)
+    } else {
+      arr.push(0)
+    }
+  }
+  return arr;
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  covertToStarsArray: covertToStarsArray
 }

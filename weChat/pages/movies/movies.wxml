@@ -4,9 +4,7 @@
   <view class='top-search'>
     <input placeholder-class="input-search" confirm-type="search" placeholder="请输入关键字搜索"></input>
   </view>
-  <block wx:for="{{readyData}}" wx:for-item="movies">
-    <template is="movieListTemplate" data="{{movies}}"/>
-  </block>
-  <!-- <template is="movieListTemplate" />
-  <template is="movieListTemplate" /> -->
+  <template is="movieListTemplate" data="{{...inTheaters}}"/>
+  <template is="movieListTemplate" data="{{...comingSoon}}"/>
+  <template is="movieListTemplate" data="{{...top250}}"/>
 </view>

@@ -1,11 +1,10 @@
 <!--pages/movies/stars/stars.wxml-->
 <template name="starsTemplate">
   <view class='startContent'>
-    <image class="star-img" src='/images/star.png' />
-    <image class="star-img" src='/images/star.png' />
-    <image class="star-img" src='/images/star.png' />
-    <image class="star-img" src='/images/star.png' />
-    <image class="star-img" src='/images/hstar.png' />
+    <block wx:for="{{stars}}" wx:for-item="i" wx:key="i">
+      <image wx:if="{{i}}" class="star-img" src='/images/star.png' />
+      <image wx:else class="star-img" src='/images/hstar.png' />
+    </block>
     <text class='grade'>{{average}}</text>
   </view>
 </template>
