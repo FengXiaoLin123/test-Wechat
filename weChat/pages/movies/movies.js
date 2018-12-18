@@ -20,23 +20,23 @@ Page({
     let inTheatersUrl = app.globalData.doubanBase + "/v2/movie/in_theaters";
     let comingSoonUrl = app.globalData.doubanBase + "/v2/movie/coming_soon";
     let top250Url = app.globalData.doubanBase + "/v2/movie/top250"
-    this.getMovieListData(inTheatersUrl, 'inTheaters')
-    this.getMovieListData(comingSoonUrl, 'comingSoon')
-    this.getMovieListData(top250Url, 'top250')
+    this.getMovieListData(inTheatersUrl, 'inTheaters', '正在热映')
+    this.getMovieListData(comingSoonUrl, 'comingSoon', '即将上映')
+    this.getMovieListData(top250Url, 'top250', '豆瓣top250')
   },
-  getMovieListData: function(url, status) {
+  getMovieListData: function (url, status, categoryTitle) {
     let that = this;
     wx.request({
       url: url,
       success: function (res) {
-        that.handleMovieData(res.data, status)
+        that.handleMovieData(res.data, status, categoryTitle)
       },
       fail: function(error) {
         console.log('fail', error)
       }
     })
   },
-  handleMovieData: function (movieData, status) {
+  handleMovieData: function (movieData, status, categoryTitle) {
     let movies = [];
     for (let idx in movieData.subjects) {
       let subject = movieData.subjects[idx];
@@ -55,6 +55,7 @@ Page({
     }
     let readyData = {};
     readyData[status] = {
+      categoryTitle: categoryTitle,
       movies: movies
     }
     this.setData(readyData)

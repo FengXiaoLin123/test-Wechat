@@ -4,7 +4,7 @@
 <template name="movieListTemplate">
   <view class='movie-item-plate'>
     <view class='template-title'>
-      <text class='remen'>热门放映</text>
+      <text class='remen'>{{categoryTitle}}</text>
       <view class='title-right'>
         <text>更多</text>
         <image src='/images/rightblue.png' class='righrBlue'/>
